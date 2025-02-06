@@ -1,4 +1,4 @@
-# TeleDentX🦷
+# TeleDentX
 ## Overview 
 The **TeleDentX** webpage is a single-page digital platform designed to streamline dental appointment booking, patient management, and treatment information. It serves as an interactive interface for both patients and clinic management, enabling easy access to dental services. Patients can schedule appointments, check treatment details, and view fee structures, while the clinic administration can manage logs, track appointments, and handle patient records efficiently.
 
