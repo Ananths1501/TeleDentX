@@ -129,7 +129,7 @@ The main interface for admins to manage clinic operations.
 
 **Description:**  
 The page where patients can schedule their appointments.
-
+<img src="./docs/appointment booking page.png"></img>
 #### Key Sections:
 - **Appointment Form** – Input fields for name, contact info, treatment selection, and preferred time.
 - **Calendar** – Calendar to pick an available appointment slot.
