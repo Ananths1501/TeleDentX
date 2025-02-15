@@ -26,7 +26,7 @@ const treatmentsData = [
   },
 ];
 
-const TreatmentDetails = () => {
+const TreatmentdetailsPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTreatment, setSelectedTreatment] = useState(null);
   const [treatments, setTreatments] = useState(treatmentsData);
@@ -318,4 +318,4 @@ const TreatmentDetails = () => {
   );
 };
 
-export default TreatmentDetails;
+export default TreatmentdetailsPage;

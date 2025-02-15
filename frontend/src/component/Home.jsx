@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaTooth } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import profileImage from '../assets/profile.jpg'; // Make sure the path to the image is correct
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -102,39 +102,36 @@ const Home = () => {
               : "hidden"
           }`}
         >
-          <a
-            href="#appointment"
+          <Link
+            to="/user-dashboard/book-appointment"
             className="hover:text-cyan-200 transition duration-300"
-            onClick={() => {
-              handleCardClick("book");
-              closeMenu();
-            }}
+            onClick={closeMenu}
           >
             Book Appointment
-          </a>
-          <a
-            href="/treatments"
+          </Link>
+          <Link
+            to="/treatments"
             className="hover:text-cyan-200 transition duration-300"
             onClick={closeMenu}
           >
             Treatments & Fees
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="#about"
             className="hover:text-cyan-200 transition duration-300"
             onClick={closeMenu}
           >
             About Me
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="#contact"
             className="hover:text-cyan-200 transition duration-300"
             onClick={closeMenu}
           >
             Contact Us
-          </a>
-          <a
-            href="#login"
+          </Link>
+          <Link
+            to="#login"
             className="hover:text-cyan-200 transition duration-300"
             onClick={() => {
               handleCardClick("login");
@@ -142,7 +139,7 @@ const Home = () => {
             }}
           >
             Login
-          </a>
+          </Link>
         </nav>
         <button className="md:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
           <FaTooth />
@@ -181,12 +178,12 @@ const Home = () => {
         >
           Book Appointment
         </div>
-        <a
-          href="/treatments"
+        <Link
+          to="/treatments"
           className="bg-white p-6 rounded-lg shadow-lg text-center font-semibold text-lg cursor-pointer transition transform hover:scale-105 hover:bg-blue-600 hover:text-white"
         >
           Treatments & Fees
-        </a>
+        </Link>
         <div
           className="bg-white p-6 rounded-lg shadow-lg text-center font-semibold text-lg cursor-pointer transition transform hover:scale-105 hover:bg-blue-600 hover:text-white"
           onClick={() => handleCardClick("order-medicine")}
